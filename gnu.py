@@ -1,16 +1,15 @@
-from sympy import N, false
+#from sympy import N, false
 import numpy as np
 import os
 
+import pygame
 
-dir = "test"
-if not os.path.isdir(dir):
-    os.mkdir(dir)
+pygame.init()
 
-for file in os.listdir():
-    if file.endswith(".xtf"):
-        print(file)
 
-colour = [1, 1, 31]/2
+info = pygame.display.Info() # You have to call this before pygame.display.set_mode()
+screen_width,screen_height = info.current_w,info.current_h
 
-print(colour[2])
+img_size = (1200, 1200)
+
+print(screen_height, screen_width)

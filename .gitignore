@@ -1,3 +1,10 @@
+# Ignorera genererade bilder
+*.png
+*.xtf
+*.pyxtf_idx
+*.mosaic
+Sidescans.rar
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
